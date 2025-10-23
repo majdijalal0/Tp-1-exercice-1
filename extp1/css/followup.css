@@ -1,0 +1,19 @@
+span{
+    font-weight: bold;
+    font-size: 18px;
+    margin:10px
+}
+.wrong{
+    color:red;
+    text-decoration: line-through;
+}
+.right{
+    color:green;
+    text-decoration: underline;
+}
+p{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(29, 22, 24);
+    font-family: Arial, Helvetica, sans-serif;
+}

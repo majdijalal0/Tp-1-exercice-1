@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/ex1.css">
+
+
+</head>
+<body>
+    <form name="questionnaire" method="get">
+        <p>1.Le developpement web est constitué de :</p>
+        <label><input type="checkbox" name="Q1" value="HTML"><span>HTML</span></label>
+        <label><input type="checkbox" name="Q1" value="Javascript"><span>Javascript</span></label>
+        <label><input type="checkbox" name="Q1" value="C"><span>C</span></label>
+
+        <p>2.Pour déclarer un variable en javascript on peut utiliser :</p>
+        <label><input type="checkbox" name="Q2" value="let"><span>let</span></label>
+        <label><input type="checkbox" name="Q2" value="var"><span>var</span></label>
+        <label><input type="checkbox" name="Q2" value="const"><span>const</span></label>
+
+        <p>3.Lequel des types suivants n'est pas primitif en Java</p>
+        <label><input type="radio" name="Q3" value="String"><span>String</span></label>
+        <label><input type="radio" name="Q3" value="int"><span>int</span></label>
+        <label><input type="radio" name="Q3" value="char"><span>char</span></label>
+
+        <p>4.Les types d'affichage sont :</p>
+        <label><input type="checkbox" name="Q4" value="grid"><span>grid</span></label>
+        <label><input type="checkbox" name="Q4" value="flexbox"><span>flexbox</span></label>
+        <label><input type="checkbox" name="Q4" value="tableau"><span>tableau</span></label>
+
+        <p>5.Parmi les parties d'un document html on trouve :</p>
+        <label><input type="radio" name="Q5" value="form"><span>form</span></label>
+        <label><input type="radio" name="Q5" value="body"><span>body</span></label>
+        <label><input type="radio" name="Q5" value="h1"><span>h1</span></label>
+
+         <br><br>
+         <input type="reset" value="Reset" class="reset">
+    </form>
+    <br>
+    <br>
+    <!--Si on click sur le boutton les resultats sont recupérés puis stocker et on se rend sur followup1.html pour l'affichage-->
+    <button onclick="
+    sauvegarderResultats(checkAnswers())
+    afficherResultats();
+    "
+    class="correction">Voir correction</button>
+
+    <button onclick="
+    window.location.href='followup.html'
+    "
+    class="reponses">Voir reponses</button>
+     
+ <script src="../javascript/script.js"></script>
+</body>
+</html>
